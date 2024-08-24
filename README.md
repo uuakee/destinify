@@ -82,6 +82,5 @@ Siga as instruções abaixo para rodar o projeto localmente:
 
 ## 📝 Contato
 
-- **Email:** seu.email@exemplo.com
-- **LinkedIn:** [seu-perfil-linkedin](https://www.linkedin.com/in/seu-perfil/)
-- **Portfólio:** [seu-portfolio.com](https://www.seu-portfolio.com)
+- **Email:** contato@kaueguedes.com.br
+
