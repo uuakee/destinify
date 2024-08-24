@@ -1,0 +1,51 @@
+.ctaContainer {
+    background-color: "bg-gradient-to-tr from-[#00FF94] to-[#009D5B]";
+    margin: 0;
+}
+
+.cta-background {
+    background: repeating-linear-gradient(
+        90deg,
+        rgba(0, 255, 148, 0.8),
+        rgba(0, 255, 148, 0.8) 5%,
+        transparent 0,
+        transparent 50%
+    ), repeating-linear-gradient(
+        180deg,
+        rgba(0, 255, 148, 0.8),
+        rgba(0, 255, 148, 0.8) 5%,
+        transparent 0,
+        transparent 50%
+    );
+    background-size: 2em 2em;
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+    z-index: 1; /* Coloca o fundo atrás do conteúdo */
+}
+
+.cta-background::before,
+.cta-background::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 365px; /* Ajuste conforme necessário */
+    pointer-events: none;
+    z-index: 0; /* Certifique-se de que isso esteja atrás do conteúdo */
+    background: linear-gradient(to bottom, white, rgba(255, 255, 255, 0));
+}
+
+.cta-background::before {
+    top: 0;
+}
+
+.cta-background::after {
+    bottom: 0;
+    background: linear-gradient(to top, white, rgba(255, 255, 255, 0));
+}
+
+.cta-content {
+    position: relative;
+    z-index: 2; /* Certifique-se de que o conteúdo esteja acima das pseudo-classes */
+}
